@@ -1,0 +1,382 @@
+@charset "utf-8";
+
+/* ★★★★★★★★★★★★★★★★★★★★★★★★★★★화면 1270크기 */
+@media  screen  and  (max-width:1270px) {
+
+  .contents .tabmenu {
+    width: 100%;
+    float: none;
+    height: 450px; 
+    margin: 5px; 
+    position: relative;
+  }
+  .banner {
+    width:80%;
+    float: none;
+    margin-left: 130px;
+  }
+  section .me h2 {
+    padding: 25px 0 15px;
+    text-align: center;
+    font-size: 30px;
+    color:#ff889e;
+    font-family: 'Kodchasan', sans-serif;
+  }
+  section .me2 h2 {
+    padding: 30px 0 15px;
+    text-align: center;
+    font-size: 25px;
+    color:#ff889e;
+    font-family: 'Kodchasan', sans-serif;
+  }
+  section .imgmm {
+    margin: 0 auto; 
+    cursor: pointer;
+
+    width: 80%;
+
+  }
+  section .imgmm li {
+    float: left;
+    width: 32%;
+    overflow: hidden;
+    margin:0  0.3%;
+    border: 1px solid #ddd;
+    position: relative;
+    margin-bottom: 20px;
+  }
+  footer .info {font-size: 14px; 
+    line-height: 1.2; font-family: 'Kodchasan', sans-serif;
+    margin-top: 50px; float: right; width:35%; }
+
+}
+
+/* ★★★★★★★★★★★★★★★★★★★★★★★★★★★화면 1000크기 */
+@media  screen  and  (max-width:1000px) {
+
+section .imgmm {
+  margin: 0 auto; 
+  cursor: pointer;
+  width: 80%;
+}
+footer .info {font-size: 14px; 
+  line-height: 1.2; font-family: 'Kodchasan', sans-serif;
+  margin-top: 30px; float: right; width:40%; }
+
+
+
+}
+
+
+/* ★★★★★★★★★★★★★★★★★★★★★★★화면 799크기 */
+@media  screen  and  (max-width:799px) {
+
+
+  .banner img {
+    display: none;
+  }
+  section .me h2 {
+    padding: 25px 0 15px;
+    text-align: center;
+    font-size: 25px;
+    color:#ff889e;
+    font-family: 'Kodchasan', sans-serif;
+  }
+  section .me2 h2 {
+    padding: 30px 0 15px;
+    text-align: center;
+    font-size: 20px;
+    color:#ff889e;
+    font-family: 'Kodchasan', sans-serif;
+  }
+  section .imgmm {
+    margin: 0 auto; 
+    cursor: pointer;
+
+    width: 80%;
+
+  }
+  section .imgmm li {
+    float: left;
+    width: 48%;
+    overflow: hidden;
+    margin:0  0.3%;
+    border: 1px solid #ddd;
+    position: relative;
+    margin-bottom: 20px;
+  }
+
+  footer .info {font-size: 12px; 
+    line-height: 1.2; font-family: 'Kodchasan', sans-serif;
+    margin-top: 30px; float: right; width:50%; }
+
+    /* 탭메뉴시작 */
+    .contents {
+      padding: 10px 0;
+      max-width:1700px;
+      margin: 50px auto;
+      position: relative;
+    }
+    .contents .tabmenu {
+      width: 98%;
+      float: left; 
+      height: 450px; 
+      margin: 5px; 
+      position: relative;
+    }
+    .tabmenu > li {
+      float: left; 
+      width: 150px; 
+      border: 1px solid #ff889e; 
+      font-size: 14px; 
+      text-align: center; 
+      border-bottom: none;
+      font-family: 'Kodchasan', sans-serif;
+    }
+    .tabmenu > li > a {
+      display: block;
+      padding:15px 0;
+    }
+    .tabmenu > li.active {
+      background: #ff889e;
+      color:#fff;
+    }
+    .tabmenu > li > div {
+      width: 100%; height: 380px;
+       border: 1px solid #ff889e;
+       position: absolute; left: 0px; 
+       display: none;
+       color:#aaa;
+      }
+    .tabmenu > li.active > div {display: block;}
+
+    .notice table {
+      width: 100%; font-size: 14px; 
+      text-align: left; margin: 10px auto;
+      table-layout: fixed;
+    }
+    .notice td {
+      padding:15px 30px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+    .notice tr:nth-child(even) {background: #ff889e;}
+    .notice tr:nth-child(even) {color:#fff;}
+    
+    .gallery {position: relative;}
+    .gallery ul {width: 80%; margin: 15px auto 0;}
+    .gallery li {float: left; width: 33.33%;}
+    .gallery li img {
+       padding: 20px;
+       border: 1px solid #ff889e;
+       width: 200px;
+       margin-top: 30px;
+      }
+      .gallery .gift {
+       top: 80%; left:50%; transform: translate(-50%, -50%); 
+       position: absolute; color:#ff889e; 
+       font-weight: bold; text-align: center;
+       font-size: 20px;
+      }
+
+      /* 작은메뉴 상단시작 */
+      #gnb {display: none;}
+
+
+      #header .row {
+        background: #ff889e; 
+        height: 120px;
+        opacity: 0.7;
+        position: relative;
+      }
+      #header h1 { 
+        position: absolute; 
+        top:50%; left:50%; 
+        transform: translate(-50%, -50%);
+      }
+
+      #gnb { width: 100%; position: absolute; top:120px; background: #000; color:#fff; }
+      #gnb em { display: block; 
+          font-style: normal;}
+      /* 트랜스폼 속성은 block 요소에만 적용됨 */
+      .depth1 > li {height: 50px; line-height: 50px; color:#aaa; text-align: center; font-size: 18px; transition: all 0.4s; position: relative; font-family: 'Kodchasan', sans-serif; }
+      .depth1 > li.on {background: #000; color: #fff; }
+      .depth1 > li:hover {background: #ff889e; color: #fff;}
+      .depth1 > li > a {display: block; padding-left: 0px;}
+      .depth1 > li:hover .depth2 {display: none; opacity: 0.8;
+           left: 205px;}
+      .depth1 > li.on .depth2 {opacity: 0; left: 205px; top:-10px;}
+      
+      .depth2 {position: absolute; left: 0px; top:0; width: 180px; transition: all 0.5s; opacity: 0;}
+      .depth2 > li {height: 40px; background: #ff889e; border-bottom: 1px solid #e17285; line-height: 40px; font-size: 13px; color: #fff; margin-bottom: 3px; text-align: center; }
+      .depth2 > li > a {display: block;}
+      .depth2 > li:hover {background: #e17285; color: #fff;}
+      
+      .depth3 > img {
+        width: 450px;
+        height: 400px;
+      }
+      
+      
+      /* 서브메뉴누르면 이미지나오게하기 */
+      .depth2 > li > .depth3 {
+        position: absolute;
+        top:0;
+        left: 180px;
+        width: 400px;
+        display: none;
+        transition: all 0.4s;
+        padding-left: 30px;
+      
+      }
+      .depth2 > li:hover > .depth3 {
+        display: none;
+      }
+
+/* 줄였을때 왼쪽상단에 세줄짜리 모양만들기 */
+    .openMOgnb { display:block; position:absolute;
+      top:50px; left:15px; width:25px; height:17px;  }
+     .openMOgnb   span  { display:block; width:30px; height:5px;
+      background:#fff; margin-bottom:4px; 
+      border-radius:10px;     }        
+      .openMOgnb   span:nth-of-type(2)   { width:20px }
+      .openMOgnb   span:nth-of-type(3)   { margin-bottom:0 }
+
+  
+   /* 작은화면 메뉴닫기버튼 */
+   #header.on  .closeMOgnb {display:block; position: absolute; top:50px; right: 15px; width: 25px; height: 17px; }
+   .closeMOgnb a {display: block;}
+
+  /* 엑스모양만들기 */
+  .closeMOgnb span {display: block; width: 35px; height: 3px; border-radius: 10px; transform: rotate(45deg); 
+   background: #fff;  position: absolute; top:5px; right: 15px; }
+  .closeMOgnb span:nth-of-type(2) {transform: rotate(-45deg);}
+
+/* sns다시 나타나게하기 */
+#sns {
+  position: absolute; 
+  top:600px; left:270px; 
+}
+#sns li {display: inline-block; font-size: 30px; color: #e17285; opacity: 0.5; margin-right: 20px; transition: all 0.5s;} 
+#sns li:hover {transform: scale(1.5);}
+
+
+
+}
+
+
+/* ★★★★★★★★★★★★★★★★★★★★★★★화면 630크기 */
+@media  screen  and  (max-width:630px) {
+
+  section .me h2 {
+    padding: 25px 0 15px;
+    text-align: center;
+    font-size: 25px;
+    color:#ff889e;
+    font-family: 'Kodchasan', sans-serif;
+  }
+  section .me2 h2 {
+    padding: 30px 0 15px;
+    text-align: center;
+    font-size: 20px;
+    color:#ff889e;
+    font-family: 'Kodchasan', sans-serif;
+  }
+  section .imgmm {
+    margin: 0 auto; 
+    cursor: pointer;
+
+    width: 80%;
+
+  }
+  section .imgmm li {
+    float: left;
+    width: 48%;
+    overflow: hidden;
+    margin:0  0.3%;
+    border: 1px solid #ddd;
+    position: relative;
+    margin-bottom: 20px;
+  }
+
+.gallery {position: relative;}
+.gallery ul {width: 100%; margin: 15px auto 0;}
+.gallery li {float: left; width: 33.33%;}
+.gallery li img {
+   padding: 7px;
+   border: 1px solid #ff889e;
+   width: 150px;
+   margin-top: 30px;
+  }
+  .gallery .gift {
+    top: 80%; left:50%; transform: translate(-50%, -50%); 
+    position: absolute; color:#ff889e; 
+    font-weight: bold; text-align: center;
+    font-size: 40px;
+   }
+
+  footer ul li {font-size: 10px; float: left;  padding:10px;}
+  footer .info {font-size: 12px; 
+    line-height: 1.2; font-family: 'Kodchasan', sans-serif;
+    margin-top: 10px; float: left; width:70%; }
+   footer .info2 {font-size: 12px; float: left; 
+      line-height: 1.5; font-family: 'Kodchasan', sans-serif;
+      margin-top: 10px; width: 30%; }
+  footer .info2 em {font-style: normal; 
+    font-weight: bold; font-size: 16px;}
+
+
+}
+
+/* ★★★★★★★★★★★★★★★★★★★★★★★화면 400크기 */
+@media  screen  and  (max-width:400px) {
+
+  section .imgmm {
+    margin: 0 auto; 
+    cursor: pointer;
+
+    width: 80%;
+  }
+  section .imglong {
+    background-color:#ff889e;
+    margin-top: 80px;
+    padding: 30px 85px;
+    display: none;
+    }
+    section .imglong img {
+      width:100%;
+      display:none;
+    }
+  #sns {position: absolute; top:80px; right: 50px;
+      display: none;
+  }
+
+  
+.gallery {position: relative;}
+.gallery ul {width: 100%; margin: 15px auto 0;}
+.gallery li {float: left; width: 33.33%;}
+.gallery li img {
+   padding: 7px;
+   border: 1px solid #ff889e;
+   width: 100px;
+   margin-top: 30px;
+  }
+  .gallery .gift {
+    top: 70%; left:50%; transform: translate(-50%, -50%); 
+    position: absolute; color:#ff889e; 
+    font-weight: bold; text-align: center;
+    font-size: 30px;
+   }
+
+  footer ul li {font-size: 10px; float: left;  padding:3px;}
+  footer .info {font-size: 12px; 
+    line-height: 1.2; font-family: 'Kodchasan', sans-serif;
+    margin-top: 10px; }
+   footer .info2 {font-size: 12px; float: left; 
+      line-height: 1.5; font-family: 'Kodchasan', sans-serif;
+      margin-top: 10px; width: 100%; text-align: center;}
+  footer .info2 em {font-style: normal; 
+    font-weight: bold; font-size: 13px;}
+
+}

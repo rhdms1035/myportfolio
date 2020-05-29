@@ -1,0 +1,307 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Kodchasan:wght@700&display=swap');
+
+*{margin: 0; padding: 0; box-sizing: border-box; border: 0px solid #f00;}
+a {color:inherit; text-decoration: none; }
+ol, ul {list-style-type: none;}
+table {width: 100%; border-collapse:collapse; table-layout: fixed;}
+.cf:after, .cf:before {content: ""; display: block; clear: both;}
+header, section {display: block;}
+html { height:100%; }
+body {  color:#bbb; height:100%;
+}
+.row { max-width:1700px; margin:0 auto; }
+
+header {  height: 85%; background: url(../img/slider1_1.jpg) no-repeat;
+    background-size: cover; position:relative; background-position: center;
+    margin-bottom: 100px;}
+
+h1 { position:relative; top:100px;}
+h1 img {width: 150px;}
+
+#gnb { width: 220px; position:relative; top:150px; }
+#gnb em { display: block; 
+    font-style: normal;}
+/* 트랜스폼 속성은 block 요소에만 적용됨 */
+.depth1 > li {height: 50px; line-height: 50px; color:#aaa; text-align: left; font-size: 18px; transition: all 0.4s; position: relative; font-family: 'Kodchasan', sans-serif; }
+.depth1 > li.on {background: #ff889e; color: #fff; }
+.depth1 > li:hover {background: #ff889e; color: #fff;}
+.depth1 > li > a {display: block; padding-left: 40px;}
+.depth1 > li:hover .depth2 {display: block; opacity: 0.8;
+     left: 205px;}
+.depth1 > li.on .depth2 {opacity: 0.8; left: 205px; top:-10px;}
+
+.depth2 {position: absolute; left: 0px; top:0; width: 180px; transition: all 0.5s; opacity: 0;}
+.depth2 > li {height: 40px; background: #ff889e; border-bottom: 1px solid #e17285; line-height: 40px; font-size: 13px; color: #fff; margin-bottom: 3px; text-align: center; }
+.depth2 > li > a {display: block;}
+.depth2 > li:hover {background: #e17285; color: #fff;}
+
+.depth3 > img {
+  width: 450px;
+  height: 400px;
+}
+
+
+/* 서브메뉴누르면 이미지나오게하기 */
+.depth2 > li > .depth3 {
+  position: absolute;
+  top:0;
+  left: 180px;
+  width: 400px;
+  display: none;
+  transition: all 0.4s;
+  padding-left: 30px;
+
+}
+.depth2 > li:hover > .depth3 {
+  display: block;
+}
+
+
+#sns {position: absolute; top:80px; right: 50px;}
+#sns li {display: inline-block; font-size: 25px; color: #e17285; opacity: 0.5; margin-right: 20px; transition: all 0.5s;} 
+#sns li:hover {transform: scale(1.5);}
+
+section .me h2 {
+  padding: 35px 0 15px;
+  text-align: center;
+  font-size: 35px;
+  color:#ff889e;
+  font-family: 'Kodchasan', sans-serif;
+}
+section .me2 h2 {
+  padding: 100px 0 15px;
+  text-align: center;
+  font-size: 30px;
+  color:#ff889e;
+  font-family: 'Kodchasan', sans-serif;
+}
+section .imgmm {
+  margin: 30px auto; 
+  cursor: pointer;
+  margin-bottom: 50px;
+}
+section .imgmm li {
+  float: left;
+  width: 16%;
+  overflow: hidden;
+  margin:0  0.3%;
+  border: 1px solid #ddd;
+  position: relative;
+}
+section .imgmm img{
+  width: 100%;
+  transition:all 0.4s;
+}
+section .imgmm img:hover {
+  transform:scale(1.1) 
+}
+section .imgmm li a:after {
+  content:"";
+   position:absolute; transition:all  0.4s;
+  top:50%; left:50%; bottom:50%; right:50%; 
+  background:rgba(255, 100, 123, 0.3);
+}
+section .imgmm li:hover a:after {
+  top:0%; left:0%; bottom:0%; right:0%; 
+}
+
+section .imglong {
+background-color:#ff889e;
+margin-top: 80px;
+padding: 30px 0px;
+text-align: center;
+}
+section .imglong img {
+  max-width:1618px;
+  width: 98%;
+  margin: 0 1%;
+}
+
+section .imghh {
+  margin: 30px auto; 
+  cursor: pointer;
+  text-align: center;
+}
+section .imghh li {
+  float: left;
+  width: 18%;
+  margin:0  0.8%;
+  position: relative;
+}
+
+/* 탭메뉴 */
+
+.contents {
+  padding: 10px 0;
+  max-width:1700px;
+  margin: 50px auto;
+  position: relative;
+}
+.contents .tabmenu {
+  width: 48%;
+  float: left; 
+  height: 450px; 
+  margin: 5px; 
+  position: relative;
+}
+.tabmenu > li {
+  float: left; 
+  width: 300px; 
+  border: 1px solid #ff889e; 
+  font-size: 16px; 
+  text-align: center; 
+  border-bottom: none;
+  font-family: 'Kodchasan', sans-serif;
+}
+.tabmenu > li > a {
+  display: block;
+  padding:15px 0;
+}
+.tabmenu > li.active {
+  background: #ff889e;
+  color:#fff;
+}
+.tabmenu > li > div {
+  width: 100%; height: 380px;
+   border: 1px solid #ff889e;
+   position: absolute; left: 0px; 
+   display: none;
+   color:#aaa;
+  }
+.tabmenu > li.active > div {display: block;}
+
+.notice table {
+  width: 100%; font-size: 16px; 
+  text-align: left; margin: 10px auto;
+  table-layout: fixed;
+}
+.notice td {
+  padding:15px 30px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.notice tr:nth-child(even) {background: #ff889e;}
+.notice tr:nth-child(even) {color:#fff;}
+
+.gallery {position: relative;}
+.gallery ul {width: 100%; margin: 15px auto 0;}
+.gallery li {float: left; width: 33.33%;}
+.gallery li img {
+   padding: 7px;
+   border: 1px solid #ff889e;
+   width: 200px;
+   margin-top: 30px;
+  }
+  .gallery .gift {
+   top: 80%; left:50%; transform: translate(-50%, -50%); 
+   position: absolute; color:#ff889e; 
+   font-weight: bold; text-align: center;
+   font-size: 40px;
+  }
+
+  /* 탭메뉴끝 */
+
+  .banner {
+    width:48%;
+    float: right;
+  }
+  .banner img {
+    width:100%;
+    margin-top: 20px;
+  }
+
+
+
+
+footer  {background: #ff889e; padding: 10px 20px 50px; color:white; }
+footer ul {float: left; }
+footer ul li {font-size: 16px; float: left;  padding:10px;}
+footer .info {font-size: 14px; 
+  line-height: 1.2; font-family: 'Kodchasan', sans-serif;
+  margin-top: 50px; float: right; width:25%; }
+ footer .info2 {font-size: 16px; float: left; 
+    line-height: 1.5; font-family: 'Kodchasan', sans-serif;
+    margin-top: 20px; width: 50%; }
+footer .info2 em {font-style: normal; 
+  font-weight: bold; font-size: 18px;}
+
+
+  .blind {
+    font-size: 0;
+    width: 0;
+    height: 0;
+    line-height: 0;
+    text-indent: -9999px;
+    overflow: hidden;
+    visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .closeMOgnb {display:none;}
+  .openMOgnb {display: none;}
+
+/* 사진을 누르면 새로 창나오는 팝업박스 만들기 */
+.popupBox {display: none;}
+/* 팝업박스에 on이 붙으면 출력됨 */
+.popupBox.on {
+  display: block;
+  position: absolute;
+  top:0;
+  left: 0;
+  height: 200%;
+  right: 0;
+  z-index: 999999999999999999999;
+}
+.popupBox.on .inner {
+  position: absolute;
+  top:1000px;
+  left: 50%;
+  transform: translate(-50%);
+  background: #ff889e;
+  text-align: center;
+  padding: 20px;
+}
+.popupBox.on button {
+  font-size: 40px;
+  color:#ff889e;
+  position: absolute;
+  top:-35px;
+  right: -35px;
+  background: none;
+  border: none;
+}
+
+/* 사진을 누르면 새로 창나오는 팝업박스2 만들기 */
+.popupBox2 {display: none;}
+/* 팝업박스에 on이 붙으면 출력됨 */
+.popupBox2.on {
+  display: block;
+  position: absolute;
+  top:0;
+  left: 0;
+  height: 200%;
+  right: 0;
+  z-index: 999999999999999999999;
+}
+.popupBox2.on .inner {
+  position: absolute;
+  top:1520px;
+  left: 50%;
+  transform: translate(-50%);
+  background: #ff889e;
+  text-align: center;
+  padding: 20px;
+}
+.popupBox2.on button {
+  font-size: 40px;
+  color:#ff889e;
+  position: absolute;
+  top:-35px;
+  right: -35px;
+  background: none;
+  border: none;
+}
