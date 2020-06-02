@@ -1,0 +1,16 @@
+바코드생성
+12508914712901
+앞생년월일.뒤폰번
+
+http://yke0197.cafe24.com/port3/
+http://khsh0715.cafe24.com/portfolio/#intro
+
+메인
+프로필
+스킬(할줄아는거)
+포트폴리오(홈페이지 작품 등등)
+끝 연락처 등
+
+font-family: 'Pacifico';
+
+#0099ff;
