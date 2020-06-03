@@ -13,7 +13,12 @@ http://khsh0715.cafe24.com/portfolio/#intro
 
 font-family: 'Pacifico';
 
-#0099ff;
+color:#0099ff;
+조금연하게 #67c2ff
+
+연두색 #a9c400;
+아예연하게 #eeff82;
+
 
 
 KANGGOEUN

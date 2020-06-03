@@ -12,70 +12,255 @@ html { height:100%; }
 
 body { font-family:"Malgun Gothic", "맑은 고딕", sans-serif; font-size:16px; color:#444; height:100%;
   letter-spacing:-1px }
-.row { max-width:1050px; margin:0 auto }
+.row { max-width:1200px; margin:0 auto }
 
 /* 시작 */
 .openMOgnb, .closeMOgnb { display:none }
 #wrap { position:relative }
 #header {  background:rgba(0,0,0,0.5); color:#fff; 
-  position:absolute;  height:116px; width: 100%; 
+  height:116px; width: 100%; 
   top:0;  left:0; z-index:99999  }
-#header  h1  {float:left; padding:45px 0 0;}
-#header  h1 a { 
-  display:block;
-  /* 박스크기보다 로고 배경이미지 크기가 크면 
-    background-size:contain 값으로 조절함
-  */
-  text-indent:-9999px; overflow:hidden; }
+#header  h1  {float:left;font-family: 'Pacifico';
+  font-size:25px; color:#fff;  padding:30px 0px 43px;
+  letter-spacing: 5px; color:#eeff82;}
 
-#header .header_cont { float:right; width:780px }
+#header .header_cont { float:right; width:600px;}
 
-.depth1 { text-align:right;  }
+.depth1 { text-align:right;  font-family: 'Pacifico';}
 .depth1 > li { display:inline-block; 
-  font-size:25px; color:#fff;  padding:30px 40px 43px}
+  font-size:25px; color:#fff;  padding:30px 40px 43px;}
 .depth1 > li:last-child { padding-right:0px }
 
 .dep2box { position:absolute; left:0; width:100%; 
-  background:#0099ff; z-index:100;
+  background:#a9c400; z-index:100;
   top:116px; display:none;  text-align:left; 
   font-size: 16px;
   opacity: 0.7;}
 /* .depth1 > li:hover  .dep2box { display:block } */
-.depth2 > li { display:inline-block; padding:15px  }
+.depth2 > li { display:inline-block; padding:15px;  color:#fff;}
 .depth1 > li:nth-child(1)  .depth2 { 
-  padding-left:440px }
-.depth1 > li:nth-child(2)  .depth2 { padding-left:560px }
-.depth1 > li:nth-child(3)  .depth2 { padding-left:700px }
-.depth1 > li:nth-child(4)  .depth2 { padding-left:930px }
+  padding-left:0px }
+.depth1 > li:nth-child(2)  .depth2 { padding-left:750px }
+.depth1 > li:nth-child(3)  .depth2 { padding-left:890px }
+.depth1 > li:nth-child(4)  .depth2 { padding-left:1120px }
 .depth1 > li:nth-child(4)  .depth2 > li { padding-right:0 }
 
 /* CONTAINER 시작 */
-/* 슬라이드 박스 */
+/* 인트로 메인박스 */
 .slide {  background-repeat:no-repeat;
 background-size:cover; height:950px;  
-background-position:center; position:relative }
+background-position:center; position:relative; }
 .slide1 { 
   background-image:url(../img/slider2.jpg); 
   width:80%;
-  height: 705px;
-  position:absolute; top:50%; left:50%; 
-  transform:translate(-50%, -50%); 
+  margin: 0 auto;
+  height: 750px;
+  opacity: 0.8;
+  /* position:absolute; top:50%; left:50%; 
+  transform:translate(-50%, -50%);  */
 }
 .slide  .text {
-  position:absolute; top:50%; left:50%; 
+  position: relative; top:50%; left:50%; 
   transform:translate(-50%, -50%); 
-  color:#fff;  text-align:center; 
+  color:#fff;  text-align:left; 
 }
-.slide  .text  p:nth-child(1) { font-size:45px;
-   letter-spacing:0px; text-shadow:2px 2px 5px #555; 
-  border-bottom:1px solid #999; padding-bottom:10px;
-  font-family: normal; }
-.slide  .text  p:nth-child(2) { font-size:20px;
-  letter-spacing:6px; margin-top:20px 
-}
-.slide  .text  p:nth-child(3) { font-size:20px; 
-  letter-spacing:3px; position:relative; top:150px; }
+.slide  .text  p:nth-child(1) { font-size:60px;
+  text-shadow:2px 2px 5px rgb(167, 167, 167); 
+  color:#a9c400;
+ }
+.slide  .text  p:nth-child(2) { font-size:80px;
+  letter-spacing:0px; text-shadow:2px 2px 5px rgb(167, 167, 167); 
+ }
+ .slide  .text  p:nth-child(3) { font-size:80px;
+  letter-spacing:0px; text-shadow:2px 2px 5px rgb(167, 167, 167); 
+ }
+.slide  .text  p:nth-child(4) { font-size:18px; 
+  top:180px; color:#000; text-align: left; position: relative;}
+.slide  .text  p:nth-child(5) { font-size:18px; 
+  top:180px; color:#000;  text-align: left; position: relative;}
+.slide  .text  p:nth-child(6) { font-size:18px; 
+ top:180px; color:#000; text-align: left; position: relative;}
 /* .slide2,  .slide3 { display:none } * 제이쿼리소스로할거라서 주석처리*/
+
+/* 인트로에 텍스트애니메이션 효과주기 */
+.slide .text p:nth-child(2) { 
+  animation: bounceInDown 1s both 0.5s;}
+.slide .text p:nth-child(3) { 
+  animation: bounceInUp 1s both 1s;}
+.slide .text p:nth-child(4) { 
+  animation: fadeInRight 1s both 1.5s;}
+.slide .text p:nth-child(5) { 
+    animation: fadeInRight 1s both 1.5s;}
+.slide .text p:nth-child(6) { 
+    animation: fadeInRight 1s both 1.5s;}
+
+/* 어바웃시작 */
+.about .about_b {
+  margin-top: 70px;
+  background:#a9c400;
+  opacity: 0.3;
+  widows: 500px;
+  height: 500px;
+}
+
+
+/* 서브슬라이드10개시작 */
+.multi_rolling {
+  padding: 50px 0px;
+  position: relative;
+}
+.multi_rolling h2 {
+  text-align: center;
+  margin-bottom: 50px;
+  font-size: 40px;
+  color:#a9c400;
+}
+.multi_rolling img {
+  width:100%;
+  padding: 0 5px;
+}
+/* 서브슬라이드 양쪽화살표버튼 스타일잡기 */ 
+.multi_rolling .marrow {
+  position: absolute;
+  top:50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  font-size: 50px;
+  color:#a9c400;
+}
+.multi_rolling .prevArrow { left: -40px; z-index: 99999999;}
+.multi_rolling .nextArrow {right: -40px;}
+
+/* 서브슬라이드 슬릭->슬라이드 번호버튼 스타일잡기 */
+.multi_rolling .slick-dots {
+  position: absolute;
+  bottom: -50px;
+  width:100%;
+  text-align: center;
+}
+.multi_rolling .slick-dots li {
+  display: inline-block;
+}
+.multi_rolling .slick-dots li button {
+  width:10px;
+  height: 10px;
+  background: #a9c400;
+  border: none;
+  text-indent: -999999px;
+  overflow: hidden;
+  border-radius: 50%;
+  margin: 0 5px;
+}
+.multi_rolling .slick-dots li.slick-active button {
+  background:#eeff82;
+}
+
+
+/* 서브슬라이드 렌더링 아베아 시작 */
+.multi_rolling2 {
+  padding: 50px 0px;
+  position: relative;
+}
+.multi_rolling2 h2 {
+  text-align: center;
+  margin-bottom: 50px;
+  font-size: 40px;
+  color:#a9c400;
+}
+.multi_rolling2 img {
+  width:100%;
+  padding: 0 5px;
+}
+/* 서브슬라이드 양쪽화살표버튼 스타일잡기 */ 
+.multi_rolling2 .marrow {
+  position: absolute;
+  top:50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  font-size: 50px;
+  color:#a9c400;
+}
+.multi_rolling2 .prevArrow { left: -40px; z-index: 99999999;}
+.multi_rolling2 .nextArrow {right: -40px;}
+
+/* 서브슬라이드 슬릭->슬라이드 번호버튼 스타일잡기 */
+.multi_rolling2 .slick-dots {
+  position: absolute;
+  bottom: -50px;
+  width:100%;
+  text-align: center;
+}
+.multi_rolling2 .slick-dots li {
+  display: inline-block;
+}
+.multi_rolling2 .slick-dots li button {
+  width:10px;
+  height: 10px;
+  background: #a9c400;
+  border: none;
+  text-indent: -999999px;
+  overflow: hidden;
+  border-radius: 50%;
+  margin: 0 5px;
+}
+.multi_rolling2 .slick-dots li.slick-active button {
+  background:#eeff82;
+}
+
+
+/* 서브슬라이드 홈페이지 시작 */
+.multi_rolling3 {
+  padding: 50px 0px;
+  position: relative;
+}
+.multi_rolling3 h2 {
+  text-align: center;
+  margin-bottom: 50px;
+  font-size: 40px;
+  color:#a9c400;
+}
+.multi_rolling3 img {
+  width:100%;
+  padding: 0 5px;
+}
+/* 서브슬라이드 양쪽화살표버튼 스타일잡기 */ 
+.multi_rolling3 .marrow {
+  position: absolute;
+  top:50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  font-size: 50px;
+  color:#a9c400;
+}
+.multi_rolling3 .prevArrow { left: -40px; z-index: 99999999;}
+.multi_rolling3 .nextArrow {right: -40px;}
+
+/* 서브슬라이드 슬릭->슬라이드 번호버튼 스타일잡기 */
+.multi_rolling3 .slick-dots {
+  position: absolute;
+  bottom: -50px;
+  width:100%;
+  text-align: center;
+}
+.multi_rolling3 .slick-dots li {
+  display: inline-block;
+}
+.multi_rolling3 .slick-dots li button {
+  width:10px;
+  height: 10px;
+  background: #a9c400;
+  border: none;
+  text-indent: -999999px;
+  overflow: hidden;
+  border-radius: 50%;
+  margin: 0 5px;
+}
+.multi_rolling3 .slick-dots li.slick-active button {
+  background:#eeff82;
+}
 
 
 
