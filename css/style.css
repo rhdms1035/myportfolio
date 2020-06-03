@@ -10,7 +10,7 @@ table {width: 100%; border-collapse:collapse; table-layout: fixed;}
 header, section {display: block;}
 html { height:100%; }
 
-body { font-family:"Malgun Gothic", "맑은 고딕", sans-serif; font-size:16px; color:#444; height:100%; font-family: 'Pacifico';
+body { font-family:"Malgun Gothic", "맑은 고딕", sans-serif; font-size:16px; color:#444; height:100%;
   letter-spacing:-1px }
 .row { max-width:1050px; margin:0 auto }
 
@@ -21,9 +21,8 @@ body { font-family:"Malgun Gothic", "맑은 고딕", sans-serif; font-size:16px;
   position:absolute;  height:116px; width: 100%; 
   top:0;  left:0; z-index:99999  }
 #header  h1  {float:left; padding:45px 0 0;}
-#header  h1 a { background:url(../img/b.png) no-repeat; 
-  display:block; 
-  width:270px; height:71px;   
+#header  h1 a { 
+  display:block;
   /* 박스크기보다 로고 배경이미지 크기가 크면 
     background-size:contain 값으로 조절함
   */
@@ -53,14 +52,15 @@ body { font-family:"Malgun Gothic", "맑은 고딕", sans-serif; font-size:16px;
 /* CONTAINER 시작 */
 /* 슬라이드 박스 */
 .slide {  background-repeat:no-repeat;
-background-size:cover; height:550px;  
+background-size:cover; height:950px;  
 background-position:center; position:relative }
 .slide1 { 
-  background-image:url(../img/slider1.jpg); }
-.slide2 { 
-  background-image:url(../img/slider2.jpg); }
-.slide3 { 
-  background-image:url(../img/slider3.jpg); }
+  background-image:url(../img/slider2.jpg); 
+  width:80%;
+  height: 705px;
+  position:absolute; top:50%; left:50%; 
+  transform:translate(-50%, -50%); 
+}
 .slide  .text {
   position:absolute; top:50%; left:50%; 
   transform:translate(-50%, -50%); 
@@ -68,84 +68,20 @@ background-position:center; position:relative }
 }
 .slide  .text  p:nth-child(1) { font-size:45px;
    letter-spacing:0px; text-shadow:2px 2px 5px #555; 
-  border-bottom:1px solid #999; padding-bottom:10px  }
+  border-bottom:1px solid #999; padding-bottom:10px;
+  font-family: normal; }
 .slide  .text  p:nth-child(2) { font-size:20px;
   letter-spacing:6px; margin-top:20px 
 }
 .slide  .text  p:nth-child(3) { font-size:20px; 
   letter-spacing:3px; position:relative; top:150px; }
-/* .slide2,  .slide3 { display:none } * 제이쿼리소스로할거라서 주석처리/
-
-/* 슬릭->슬라이드 양쪽화살표버튼 스타일잡기 */
-.main_rolling_pc {position: relative;}
-.marrow {
-  position: absolute;
-  top:50%;
-  transform: translateY(-50%);
-  background: none;
-  border: none;
-  font-size: 50px;
-  color:#fff;
-}
-.prevArrow { left: 20px; z-index: 99999999;}
-.nextArrow {right: 20px;}
-
-/* 슬릭->슬라이드 번호버튼 스타일잡기 */
-/* 동그라미버튼은 플러그인으로 불러왔기 때문에 .slick-dots으로 무조건해야함 */
-.slick-dots {
-  position: absolute;
-  bottom: 20px;
-  width:100%;
-  text-align: center;
-}
-.slick-dots li {
-  display: inline-block;
-}
-.slick-dots li button {
-  width:15px;
-  height: 15px;
-  background: #fff;
-  border: none;
-  text-indent: -999999px;
-  overflow: hidden;
-  border-radius: 50%;
-  margin: 0 5px;
-}
-.slick-dots li.slick-active button {
-  width:30px;
-  border-radius: 50px;
-}
-/* 메인슬라이드에 만든 스탑버튼 스타일잡기 */
-.plpa {
-  position: absolute;
-  bottom: 19px;
-  background: none;
-  border: none;
-  font-size: 15px;
-  color:#fff;
-  right: 0;
-  width:50%;
-  text-align: left;
-  padding-left: 60px;
-}
+/* .slide2,  .slide3 { display:none } * 제이쿼리소스로할거라서 주석처리*/
 
 
 
 
 
-footer  {background: #0099ff; 
-  opacity: 0.5;
-  padding: 10px 20px 50px; color:white; }
-footer ul {float: left; }
-footer ul li {font-size: 16px; float: left;  padding:10px;}
-footer .info {font-size: 14px; 
-  line-height: 1.2; font-family: 'Pacifico', sans-serif;
-  margin-top: 50px; float: right; width:25%; }
- footer .info2 {font-size: 16px; float: left; 
-    line-height: 1.5; font-family: 'Pacifico', sans-serif;
-    margin-top: 20px; width: 50%; }
-footer .info2 em {font-style: normal; 
-  font-weight: bold; font-size: 18px;}
+
 
 
   .blind {

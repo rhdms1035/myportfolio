@@ -14,3 +14,20 @@ http://khsh0715.cafe24.com/portfolio/#intro
 font-family: 'Pacifico';
 
 #0099ff;
+
+
+KANGGOEUN
+PORTFOLIO
+
+hello
+
+
+이 홈페이지는 취업을 목적으로 제작되었습니다.
+
+홈페이지의 일부 내용과 이미지 등은 출처가 따로 있음을 밝힙니다.
+
+COPYRIGHT ⓒ 2020 BY KANG KO-EUN all right reserved
+
+
+
+	<link rel="stylesheet" href="css/animate.css">
