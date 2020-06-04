@@ -34,8 +34,7 @@ body { font-family:"Malgun Gothic", "맑은 고딕", sans-serif; font-size:16px;
 .dep2box { position:absolute; left:0; width:100%; 
   background:#a9c400; z-index:100;
   top:116px; display:none;  text-align:left; 
-  font-size: 16px;
-  opacity: 0.7;}
+  font-size: 16px; }
 /* .depth1 > li:hover  .dep2box { display:block } */
 .depth2 > li { display:inline-block; padding:15px;  color:#fff;}
 .depth1 > li:nth-child(1)  .depth2 { 
@@ -49,7 +48,8 @@ body { font-family:"Malgun Gothic", "맑은 고딕", sans-serif; font-size:16px;
 /* 인트로 메인박스 */
 .slide {  background-repeat:no-repeat;
 background-size:cover; height:950px;  
-background-position:center; position:relative; }
+background-position:center; position:relative; 
+overflow: hidden;}
 .slide1 { 
   background-image:url(../img/slider2.jpg); 
   width:80%;
@@ -63,6 +63,7 @@ background-position:center; position:relative; }
   position: relative; top:50%; left:50%; 
   transform:translate(-50%, -50%); 
   color:#fff;  text-align:left; 
+  padding: 20px;
 }
 .slide  .text  p:nth-child(1) { font-size:60px;
   text-shadow:2px 2px 5px rgb(167, 167, 167); 
@@ -97,47 +98,82 @@ background-position:center; position:relative; }
 /* 어바웃시작 */
 .about .about_b {
   margin-top: 70px;
-  opacity: 0.3;
-  height: 700px;
-  background: #a9c400;
+  height: 800px;
+  background: #e6eeb3;
+  }
+/* 어바웃 왼쪽에 사진넣기 */
+.about_left  {
+  float: left;
+  width:calc(70% - 200px);
+  -webkit-transform: translate3d(-200%, 0, 0);
+  transform: translate3d(-200%, 0, 0);
 }
+.about_left img {
+  margin-top:110px;
+  margin-left: 200px;
+  opacity: 0.7;
+}
+.about.on .about_left {
+animation: fadeInLeft 1s both 1s; }
+
 /* 어바웃 인박스 첫번째 */
+.about {overflow: hidden;}
 .about .inbox{
   float: right;
-  margin-top:100px;
-  margin-right: 50px;
-  border: 1px solid #000;
-  padding:50px;
+  margin-top:75px;
+  margin-right: 200px;
+  border: 1px solid #999;
+  padding:37px;
   background: #fff;
   border-radius: 50px; 
+  -webkit-transform: translate3d(200%, 0, 0);
+  transform: translate3d(200%, 0, 0);
+  width:30%;
+}
+.about.on .inbox {
+  animation: fadeInRight 1s both 0.5s;
 }
 .about .inbox h4 {
   font-family: 'Pacifico';
   font-size: 50px;
-  color:#000;
   letter-spacing: 2px;
   padding-bottom: 10px;
+  text-align: right;
+  color:#a9c400;
 }
 .about .inbox p {
   font-size: 18px;
   text-align: right;
+  color:#999;
 }
 /* 어바웃 인박스 두번째 */
 .about .inbox2 h4 {
   font-family: 'Pacifico';
   font-size: 30px;
-  color:#000;
+  letter-spacing: 2px;
+  padding-top:50px;
+  padding-bottom: 10px;
+  text-align: right;
+  color:#999;
+}
+.about .inbox2 p {
+  font-size: 16px;
+  text-align: right;
+}
+/* 어바웃 인박스 세번째 */
+.about .inbox3 h4 {
+  font-family: 'Pacifico';
+  font-size: 30px;
+  color:#999;
   letter-spacing: 2px;
   padding-top:50px;
   padding-bottom: 10px;
   text-align: right;
 }
-
-
-
-
-
-
+.about .inbox3 p {
+  font-size: 16px;
+  text-align: right;
+}
 
 /* 서브슬라이드10개시작 */
 .multi_rolling {

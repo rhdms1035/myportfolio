@@ -1,18 +1,4 @@
 
-// 스크롤을 내리면 탑버튼이 보이고 안보이고
-$(window).scroll(function(){
-    var sct = $(this).scrollTop();
-        if ( $("html").hasClass("mobile")){
-            if (sct > 50) {
-                $("to_top").show()
-            } else {
-                $("to_top").hide()
-            }
-        } else {
-            $("to_top").show()
-        }
-})
-
 // 탑버튼을 누르면 자연스럽게 위로 
 $(".to_top").on("click", function(){
     $("body, html").animate({scrollTop:"0px"}, 600)
@@ -216,3 +202,23 @@ $(".multi_visual3").slick({
 })
 
 
+
+// 500픽셀로 가면 애니메이션효과 나타나게 하기
+$(window).scroll(function(){
+    var sct = $(this).scrollTop();
+        if (sct > 500) {
+            $(".about").addClass("on")
+        } else {
+            $(".about").removeClass("on")
+        }
+    })
+
+    // 500픽셀로 가면 애니메이션효과 나타나게 하기
+$(window).scroll(function(){
+    var sct = $(this).scrollTop();
+        if (sct > 500) {
+            $(".about").addClass("on")
+        } else {
+            $(".about").removeClass("on")
+        }
+    })

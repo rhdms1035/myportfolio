@@ -18,25 +18,30 @@ color:#0099ff;
 
 연두색 #a9c400;
 아예연하게 #eeff82;
-
-
-
-KANGGOEUN
-PORTFOLIO
-
-hello
-
-
-이 홈페이지는 취업을 목적으로 제작되었습니다.
-
-홈페이지의 일부 내용과 이미지 등은 출처가 따로 있음을 밝힙니다.
-
-COPYRIGHT ⓒ 2020 BY KANG KO-EUN all right reserved
-
-
+오퍼시티 0.3준색깔 e6eeb3
 
 	<link rel="stylesheet" href="css/animate.css">
 
+.appbbs_box.on  .app_line {
+  animation: fadeInRight 1s both 0.5s;
+}
+
+  -webkit-transform: translate3d(250%, 0, 0);
+  transform: translate3d(250%, 0, 0);}
+
+
+
+
+
+
+// 1000픽셀로 가면 애니메이션효과 나타나게 하기
+$(window).scroll(function(){
+    var sct = $(this).scrollTop();
+        if (sct > 1000) {
+            $(".appbbs_box").addClass("on")
+        } else {
+            $(".appbbs_box").removeClass("on")
+        }
 
 
 
