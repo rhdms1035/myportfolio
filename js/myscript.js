@@ -182,13 +182,13 @@ $(".multi_visual2").slick({
 })
 
 
-// 서브슬라이드 홈페이지 2개 돌아가게 만듬
+// 서브슬라이드 홈페이지 4개 돌아가게 만듬
 $(".multi_visual3").slick({
-    autoplay:true,     //기본값은 false, 자동재생
+    autoplay:false,     //기본값은 false, 자동재생
     autoplaySpeed:3000,      //슬라이드 지연시간 3000->3초
     dots:true,     //기본값은 false, 슬라이드번호버튼
     speed:600,        //슬라이드 동작하는데 걸리는 시간
-    slidesToShow:2,        //보여지는 슬라이드의 수
+    slidesToShow:1,        //보여지는 슬라이드의 수
     slidesToScroll:1,       //넘어가는 슬라이드의 수
     pauseOnHover:false,       //마우스오버시 슬라이드 멈춤 여부
     pauseOnDotsHover:true,         //슬라이드번호버튼 위에 마우스오버시멈춤여부

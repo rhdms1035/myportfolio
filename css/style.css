@@ -318,7 +318,7 @@ animation: fadeInLeft 1s both 1s; }
 .multi_rolling3 h2 {
   text-align: center;
   margin-bottom: 50px;
-  font-size: 40px;
+  font-size: 30px;
   color:#a9c400;
 }
 .multi_rolling3 img {
@@ -338,7 +338,7 @@ animation: fadeInLeft 1s both 1s; }
 .multi_rolling3 .prevArrow { left: -40px; z-index: 99999999;}
 .multi_rolling3 .nextArrow {right: -40px;}
 
-/* 서브슬라이드 슬릭->슬라이드 번호버튼 스타일잡기 */
+/* 서브슬라이드3 슬릭->슬라이드 번호버튼 스타일잡기 */
 .multi_rolling3 .slick-dots {
   position: absolute;
   bottom: -50px;
