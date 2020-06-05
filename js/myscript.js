@@ -203,7 +203,7 @@ $(".multi_visual3").slick({
 
 
 
-// 500픽셀로 가면 애니메이션효과 나타나게 하기
+// 500픽셀로 가면 어바웃 텍스트애니메이션효과 나타나게 하기
 $(window).scroll(function(){
     var sct = $(this).scrollTop();
         if (sct > 500) {
@@ -213,7 +213,7 @@ $(window).scroll(function(){
         }
     })
 
-    // 500픽셀로 가면 애니메이션효과 나타나게 하기
+// 500픽셀로 가면 어바웃 텍스트애니메이션효과 나타나게 하기
 $(window).scroll(function(){
     var sct = $(this).scrollTop();
         if (sct > 500) {
@@ -222,3 +222,14 @@ $(window).scroll(function(){
             $(".about").removeClass("on")
         }
     })
+
+
+// 상단메뉴를 누르면 그 부분으로 찾아감
+$("#header .depth1 > li").on("click", function(){
+   var lieq =  $(this).index()
+   var divtop =  $("body > div").eq(lieq).offset().top
+   $("body, html").animate({
+    scrollTop: divtop
+   }, 600)
+})
+
