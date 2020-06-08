@@ -373,31 +373,32 @@ animation: fadeInLeft 1s both 1s; }
   .contact  .text  p:nth-child(1) { font-size:60px;
     color:#a9c400; 
    }
-  .contact  .text  p:nth-child(2) { font-size:80px;
-    letter-spacing:0px; font-family: 'Pacifico';
-   }
-   .contact  .text  p:nth-child(3) { font-size:80px;
-    letter-spacing:0px; font-family: 'Pacifico';
-   }
-  .contact  .text  p:nth-child(4) { font-size:18px; 
+
+  .contact  .text  p:nth-child(2) { font-size:18px; 
     top:0px; color:#000; text-align: right; position: relative; margin-top: 50px;}
-  .contact  .text  p:nth-child(5) { font-size:18px; 
+  .contact  .text  p:nth-child(3) { font-size:18px; 
     top:0px; color:#000;  text-align: right; position: relative;}
-  .contact  .text  p:nth-child(6) { font-size:18px; 
+  .contact  .text  p:nth-child(4) { font-size:18px; 
    top:0px; color:#000; text-align: right; position: relative;}
   /* .slide2,  .slide3 { display:none } * 제이쿼리소스로할거라서 주석처리*/
+  .contact  .text  p:nth-child(5) { font-size:80px;
+    letter-spacing:0px; font-family: 'Pacifico';
+   }
+   .contact  .text  p:nth-child(6) { font-size:80px;
+    letter-spacing:0px; font-family: 'Pacifico';
+   }
   
   /*커넥트 텍스트애니메이션 효과주기 */
-  .contact .text p:nth-child(2) { 
-    animation: bounceInDown 1s both 5s;}
-  .contact .text p:nth-child(3) { 
-    animation: bounceInUp 1s both 5s;}
-  .contact .text p:nth-child(4) { 
-    animation: fadeInRight 1s both 6s;}
-  .contact .text p:nth-child(5) { 
-      animation: fadeInRight 1s both 6s;}
   .contact .text p:nth-child(6) { 
-      animation: fadeInRight 1s both 6s;}
+    animation: bounceInDown 1s both 1s;}
+  .contact .text p:nth-child(5) { 
+    animation: bounceInUp 1s both 1s;}
+  .contact .text p:nth-child(4) { 
+    animation: fadeInRight 1s both 1s;}
+  .contact .text p:nth-child(2) { 
+      animation: fadeInRight 1s both 1s;}
+  .contact .text p:nth-child(3) { 
+      animation: fadeInRight 1s both 1s;}
 
 
 

@@ -32,8 +32,6 @@ color:#0099ff;
 
 
 
-
-
 // 1000픽셀로 가면 애니메이션효과 나타나게 하기
 $(window).scroll(function(){
     var sct = $(this).scrollTop();
