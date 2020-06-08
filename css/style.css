@@ -369,37 +369,39 @@ animation: fadeInLeft 1s both 1s; }
     color:#a9c400;  text-align:right; 
     padding: 30px; 
   }
-
-  .contact  .text  p:nth-child(1) { font-size:60px;
-    color:#a9c400; 
-   }
-
-  .contact  .text  p:nth-child(2) { font-size:18px; 
-    top:0px; color:#000; text-align: right; position: relative; margin-top: 50px;}
-  .contact  .text  p:nth-child(3) { font-size:18px; 
-    top:0px; color:#000;  text-align: right; position: relative;}
-  .contact  .text  p:nth-child(4) { font-size:18px; 
-   top:0px; color:#000; text-align: right; position: relative;}
-  /* .slide2,  .slide3 { display:none } * 제이쿼리소스로할거라서 주석처리*/
-  .contact  .text  p:nth-child(5) { font-size:80px;
+  .contact  .text  p:nth-child(1) { font-size:80px;
     letter-spacing:0px; font-family: 'Pacifico';
    }
-   .contact  .text  p:nth-child(6) { font-size:80px;
+   .contact  .text  p:nth-child(2) { font-size:80px;
     letter-spacing:0px; font-family: 'Pacifico';
    }
+   .contact  .text  p:nth-child(3) {  font-size:40px;
+    letter-spacing:0px; font-family: 'Pacifico';
+    color:#999; margin-bottom: 50px;;}
   
-  /*커넥트 텍스트애니메이션 효과주기 */
-  .contact .text p:nth-child(6) { 
+  /*컨텍트 텍스트애니메이션 효과주기 */
+  .contact .text p:nth-child(1) { 
     animation: bounceInDown 1s both 1s;}
-  .contact .text p:nth-child(5) { 
-    animation: bounceInUp 1s both 1s;}
-  .contact .text p:nth-child(4) { 
-    animation: fadeInRight 1s both 1s;}
   .contact .text p:nth-child(2) { 
-      animation: fadeInRight 1s both 1s;}
+    animation: bounceInUp 1s both 1s;}
   .contact .text p:nth-child(3) { 
-      animation: fadeInRight 1s both 1s;}
+    animation: fadeInRight 1s both 1s;}
 
+/* 컨텍트 부분에 스크롤애니메이션주기*/
+   .contact text {
+      -webkit-transform: translate3d(200%, 0, 0);
+      transform: translate3d(200%, 0, 0);
+      width:30%; }
+
+   .contact.on .text p:nth-child(1){
+      animation: fadeInRight 1s both 0.5s;
+    }
+    .contact.on .text p:nth-child(2){
+      animation: fadeInLeftBig 1s both 0.5s;
+    }
+    .contact.on .text p:nth-child(3){
+      animation: fadeInUp 1s both 0.5s;
+    }
 
 
 
@@ -420,64 +422,3 @@ animation: fadeInLeft 1s both 1s; }
 .closeMOgnb {display:none;}
 .openMOgnb {display: none;}
 
-/* 사진을 누르면 새로 창나오는 팝업박스 만들기 */
-.popupBox {display: none;}
-/* 팝업박스에 on이 붙으면 출력됨 */
-.popupBox.on {
-  display: block;
-  position: absolute;
-  top:0;
-  left: 0;
-  height: 200%;
-  right: 0;
-  z-index: 999999999999999999999;
-}
-.popupBox.on .inner {
-  position: absolute;
-  top:1000px;
-  left: 50%;
-  transform: translate(-50%);
-  background: #ff889e;
-  text-align: center;
-  padding: 20px;
-}
-.popupBox.on button {
-  font-size: 40px;
-  color:#ff889e;
-  position: absolute;
-  top:-35px;
-  right: -35px;
-  background: none;
-  border: none;
-}
-
-/* 사진을 누르면 새로 창나오는 팝업박스2 만들기 */
-.popupBox2 {display: none;}
-/* 팝업박스에 on이 붙으면 출력됨 */
-.popupBox2.on {
-  display: block;
-  position: absolute;
-  top:0;
-  left: 0;
-  height: 200%;
-  right: 0;
-  z-index: 999999999999999999999;
-}
-.popupBox2.on .inner {
-  position: absolute;
-  top:1520px;
-  left: 50%;
-  transform: translate(-50%);
-  background: #ff889e;
-  text-align: center;
-  padding: 20px;
-}
-.popupBox2.on button {
-  font-size: 40px;
-  color:#ff889e;
-  position: absolute;
-  top:-35px;
-  right: -35px;
-  background: none;
-  border: none;
-}

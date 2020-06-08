@@ -233,3 +233,12 @@ $("#header .depth1 > li").on("click", function(){
    }, 600)
 })
 
+// 2500픽셀로 가면 컨택트 텍스트애니메이션효과 나타나게 하기
+$(window).scroll(function(){
+    var sct = $(this).scrollTop();
+        if (sct >2500) {
+            $(".contact").addClass("on")
+        } else {
+            $(".contact").removeClass("on")
+        }
+    })
